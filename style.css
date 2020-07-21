@@ -1,0 +1,184 @@
+/* "Тело" проекта */
+body{
+	font-family: 'Vollkorn', serif;
+	margin: 0;
+}
+/* "Шапка" */
+header{
+	background-color: #FCFCFC;
+	padding: 40px 50px;
+}
+/* Навигация по сайту */
+nav{
+	display: flex;
+	align-items: center;
+}
+    /* Позиционирование таблицы "Шапки" */
+
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+/* Отдельный элемент списка */
+li {
+	display: block;
+	padding: 0 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: transform .5s;
+
+}
+li a {
+	text-decoration: none;
+	color:#424242;
+	transition: transform .5s;
+	padding: 10px;
+
+}
+/* Блюр при наведении на ссылку курсором */
+ul:hover li{
+	filter: blur(5px);
+}
+ul:hover li:hover{
+	transform: scale(1.2);
+	filter: blur(0px);
+}
+/* навигационное меня для сайта */
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* Предварительный просмотр новости */
+.news-preview{
+	min-height: 100%;
+	border: 3px solid black;
+	border-radius: 10px;
+	font-size: 22px;
+	padding: 25px 20px;
+	display: flex; 
+	flex-direction: column;
+}
+
+.news-preview__text {
+	margin-bottom: 20px;
+}
+.min-h-100{
+	min-height: 100%;
+}
+/* Основной контент проекта */
+main{
+	background-color:whitesmoke;
+}
+/* Кнопка "Подробнее при наведении курсора */
+a:hover{
+	text-decoration: none;
+	color: black;
+	background-color: #E2E2E2;
+}
+
+/* Дата */
+.news-preview__datе{
+	font-size: 16px;
+	/* padding: 7%; */
+	margin-bottom: 15px;
+	text-decoration-line: underline;
+	text-decoration-color:#AFAFAF ;
+}
+/*  "Подробнее */
+.news-preview__link{
+	margin-top: auto;
+	color:#343434;
+	font-weight: bold;
+}
+/* Работа с текстом новости под заголовком */
+.newsstyle{
+	text-align: left;
+	border: 6px solid black;
+	border-radius: 20px;
+	font-size: 20px;
+	color: #262729;
+	padding: 25px;
+}
+/* Стили для заголовка  */
+.newsheading{
+	padding: 20px;	
+}
+.news-heading__text{
+	justify-content: right;
+}
+/* Подвал */
+.footer{
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+/* Контакты */
+.footer__contacts{
+	padding-bottom: 10px;
+	padding-top: 30px;
+	border-top: 2px solid black;
+}
+/* Номер */
+.footer__number{
+
+}
+/* адрес */
+.footer__address{
+
+}
+/* схема проезда */
+.footer__location-map{
+	font-size: 20px;
+}
+
+
+/* улучшения стилей */
+
+.header__logo:hover {
+	background: none;
+}
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+}
+ul {
+	padding-left: 0;
+}
+nav li {
+	text-align: center;
+	margin: 10px 0;
+}
+nav li a {
+	padding: 0;
+}
+.news-preview {
+	position: relative;
+}
+.news-preview:hover {
+	background-color: white;
+	transition: background-color 300ms;
+}
+.news-preview__link:hover {
+	background: none;
+}
+.news-preview__link:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: whitesmoke;
+}
+footer {
+	margin-top: auto
+}
